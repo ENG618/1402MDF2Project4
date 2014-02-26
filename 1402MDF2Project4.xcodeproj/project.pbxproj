@@ -23,6 +23,9 @@
 		5C53D83118BC461400BE5A3A /* _402MDF2Project4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D83018BC461400BE5A3A /* _402MDF2Project4Tests.m */; };
 		5C53D8CB18BD70BA00BE5A3A /* MovieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8CA18BD70BA00BE5A3A /* MovieInfo.m */; };
 		5C53D8CE18BD70C400BE5A3A /* TheaterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8CD18BD70C400BE5A3A /* TheaterInfo.m */; };
+		5C53D8D518BD734D00BE5A3A /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8D418BD734D00BE5A3A /* MovieDetailsViewController.m */; };
+		5C53D8D818BD736D00BE5A3A /* MovieTrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8D718BD736D00BE5A3A /* MovieTrailerViewController.m */; };
+		5C53D8DB18BD739C00BE5A3A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8DA18BD739C00BE5A3A /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		5C53D8CA18BD70BA00BE5A3A /* MovieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieInfo.m; sourceTree = "<group>"; };
 		5C53D8CC18BD70C400BE5A3A /* TheaterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterInfo.h; sourceTree = "<group>"; };
 		5C53D8CD18BD70C400BE5A3A /* TheaterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterInfo.m; sourceTree = "<group>"; };
+		5C53D8D318BD734D00BE5A3A /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
+		5C53D8D418BD734D00BE5A3A /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
+		5C53D8D618BD736D00BE5A3A /* MovieTrailerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTrailerViewController.h; sourceTree = "<group>"; };
+		5C53D8D718BD736D00BE5A3A /* MovieTrailerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTrailerViewController.m; sourceTree = "<group>"; };
+		5C53D8D918BD739C00BE5A3A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5C53D8DA18BD739C00BE5A3A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,12 @@
 				5C53D81218BC461400BE5A3A /* AppDelegate.m */,
 				5C53D81418BC461400BE5A3A /* Main_iPhone.storyboard */,
 				5C53D81718BC461400BE5A3A /* Main_iPad.storyboard */,
+				5C53D8D918BD739C00BE5A3A /* MainViewController.h */,
+				5C53D8DA18BD739C00BE5A3A /* MainViewController.m */,
+				5C53D8D318BD734D00BE5A3A /* MovieDetailsViewController.h */,
+				5C53D8D418BD734D00BE5A3A /* MovieDetailsViewController.m */,
+				5C53D8D618BD736D00BE5A3A /* MovieTrailerViewController.h */,
+				5C53D8D718BD736D00BE5A3A /* MovieTrailerViewController.m */,
 				5C53D8CF18BD70CC00BE5A3A /* Custom Objects */,
 				5C53D81D18BC461400BE5A3A /* Images.xcassets */,
 				5C53D80918BC461400BE5A3A /* Supporting Files */,
@@ -269,7 +284,10 @@
 				5C53D81318BC461400BE5A3A /* AppDelegate.m in Sources */,
 				5C53D8CE18BD70C400BE5A3A /* TheaterInfo.m in Sources */,
 				5C53D80F18BC461400BE5A3A /* main.m in Sources */,
+				5C53D8D518BD734D00BE5A3A /* MovieDetailsViewController.m in Sources */,
+				5C53D8DB18BD739C00BE5A3A /* MainViewController.m in Sources */,
 				5C53D8CB18BD70BA00BE5A3A /* MovieInfo.m in Sources */,
+				5C53D8D818BD736D00BE5A3A /* MovieTrailerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
