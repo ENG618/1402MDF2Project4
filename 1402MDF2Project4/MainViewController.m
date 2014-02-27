@@ -74,7 +74,7 @@
 
 - (void) viewDidAppear:(BOOL)animated
 {
-    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,26 +117,34 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     switch (section) {
-        case 0:
-            NSLog(@"Theaters: %@", theaters.description);
-            //TheaterInfo *tempTheater = [theaters objectAt]
-            //NSString *header = [theaters 0]
-            
-            return @"Section 1";
+        case 0:{
+            // Grab the correct theater object per section title
+            TheaterInfo *tempTheater = [theaters objectAtIndex:0];
+            //Return theater title
+            return tempTheater.theaterTitle;
             break;
-            
-        case 1:
-            return @"Section2";
+        }
+        case 1:{
+            // Grab the correct theater object per section title
+            TheaterInfo *tempTheater = [theaters objectAtIndex:1];
+            //Return theater title
+            return tempTheater.theaterTitle;
             break;
-            
-        case 2:
-            return @"Section3";
+        }
+        case 2:{
+            // Grab the correct theater object per section title
+            TheaterInfo *tempTheater = [theaters objectAtIndex:2];
+            //Return theater title
+            return tempTheater.theaterTitle;
             break;
-            
-        case 3:
-            return @"Section4";
+        }
+        case 3:{
+            // Grab the correct theater object per section title
+            TheaterInfo *tempTheater = [theaters objectAtIndex:3];
+            //Return theater title
+            return tempTheater.theaterTitle;
             break;
-            
+        }
         default:
             return nil;
             break;
