@@ -157,6 +157,20 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    for (int i=0 ; i<movies.count; i++) {
+        NSLog(@"This is movie: %@", [movies objectAtIndex:i]);
+        MovieInfo *tempMovie = [movies objectAtIndex:i];
+        
+        cell.textLabel.text = tempMovie.movieTitle;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     cell.textLabel.text = @"test";
     return cell;
 }
