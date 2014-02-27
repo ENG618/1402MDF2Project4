@@ -21,6 +21,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[movie movieTrailerURL]];
+    if (moviePlayer) {
+        [self.view addSubview:moviePlayer.view];
+        
+        moviePlayer.view.frame = movieView.frame;
+        
+        moviePlayer.fullscreen = NO;
+        moviePlayer.controlStyle = MPMovieControlStyleNone;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,17 +40,7 @@
 
 - (IBAction)onPlay:(id)sender
 {
-    moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[movie movieTrailerURL]];
-    if (moviePlayer) {
-        [self.view addSubview:moviePlayer.view];
-        
-        moviePlayer.view.frame = movieView.frame;
-        
-        moviePlayer.fullscreen = NO;
-        moviePlayer.controlStyle = MPMovieControlStyleNone;
-        
-        [moviePlayer play];
-    }
+    [moviePlayer play];
 }
 
 - (IBAction)onStop:(id)sender
