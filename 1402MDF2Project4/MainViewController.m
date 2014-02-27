@@ -27,36 +27,112 @@
 {
     [super viewDidLoad];
     
-    theaters = [[NSMutableArray alloc] init];
     movies = [[NSMutableArray alloc] init];
+    theaters = [[NSMutableArray alloc] init];
+    
+    // Create Movie Data
+    
+    MovieInfo *movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"3 Days To Kill";
+    movie.movieImage = [UIImage imageNamed:@"3DayToKill.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"2:00pm", @"4:45pm", @"7:20pm", @"9:55pm", nil];
+    // Obtain path to video
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"3DaysToKill" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"12 Years A Slave";
+    movie.movieImage = [UIImage imageNamed:@"12YearsASlave.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"12:50pm", @"3:40pm", @"6:45pm", @"9:45pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"12YearsASlave" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"About Last Night";
+    movie.movieImage = [UIImage imageNamed:@"AboutLastNight.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"11:50am", @"1:15pm", @"3:55pm", @"10:30pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"AboutLastNight" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"American Hustle";
+    movie.movieImage = [UIImage imageNamed:@"AmericanHustle.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"10:30am", @"12:10pm", @"2:50pm", @"5:30pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"AmericanHustle" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Endless Love";
+    movie.movieImage = [UIImage imageNamed:@"EndlessLove.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"10:55am", @"1:35pm", @"7:30pm", @"10:15pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"EndlessLove" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Frozen";
+    movie.movieImage = [UIImage imageNamed:@"Frozen.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"11:00am", @"1:50pm", @"4:40pm", @"5:25pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"Frozen" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"The Lego Movie";
+    movie.movieImage = [UIImage imageNamed:@"TheLegoMovie.png"];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    filePath = [[NSBundle mainBundle] pathForResource:@"TheLegoMovie" ofType:@"mp4"];
+    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
+    
+    [movies addObject:movie];
     
     // Create Theater Data
     
     TheaterInfo *theater = [[TheaterInfo alloc] init];
     theater.theaterTitle = [NSString stringWithFormat:@"AMC Altamonte Mall 18"];
     theater.theaterLocation = [NSString stringWithFormat:@"433 E. Altamonte Dr. Altamonte Springs, FL 32701"];
-    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    theater.theaterImage = [UIImage imageNamed:@"AMCAM18.png"];
+    theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
     
     theater = [[TheaterInfo alloc] init];
     theater.theaterTitle = [NSString stringWithFormat:@"Regal Winter Park Village 20"];
     theater.theaterLocation = [NSString stringWithFormat:@"510 North Orlando Avenue Winter Park, FL 32789"];
-    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    theater.theaterImage = [UIImage imageNamed:@"RWPV20"];
+    theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
     
     theater = [[TheaterInfo alloc] init];
     theater.theaterTitle = [NSString stringWithFormat:@"Aloma Cinema Grill"];
     theater.theaterLocation = [NSString stringWithFormat:@"2155 Aloma Avenue Winter Park, FL 32792"];
-    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    theater.theaterImage = [UIImage imageNamed:@"ACG"];
+    theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
     
     theater = [[TheaterInfo alloc] init];
     theater.theaterTitle = [NSString stringWithFormat:@"Regal Waterford Lakes 20"];
     theater.theaterLocation = [NSString stringWithFormat:@"541 North Alafaya Trail Orlando, FL 32828"];
-    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    theater.theaterImage = [UIImage imageNamed:@"RWL20.png"];
+    theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
     
@@ -70,11 +146,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void) viewDidAppear:(BOOL)animated
-{
-    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,16 +167,16 @@
     // Return the number of rows in the section.
     switch (section) {
         case 0:
-            return 2;
+            return [[[theaters objectAtIndex:0] theaterShowings] count];
             break;
         case 1:
-            return 2;
+            return [[[theaters objectAtIndex:1] theaterShowings] count];
             break;
         case 2:
-            return 2;
+            return [[[theaters objectAtIndex:2] theaterShowings] count];
             break;
         case 3:
-            return 2;
+            return [[[theaters objectAtIndex:3] theaterShowings] count];
             break;
             
         default:
@@ -157,21 +228,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    for (int i=0 ; i<movies.count; i++) {
-        NSLog(@"This is movie: %@", [movies objectAtIndex:i]);
-        MovieInfo *tempMovie = [movies objectAtIndex:i];
-        
-        cell.textLabel.text = tempMovie.movieTitle;
-        
+    MovieInfo *tempMovie = [movies objectAtIndex:indexPath.row];
+    cell.textLabel.text = tempMovie.movieTitle;
+    NSMutableString *showTimes = [[NSMutableString alloc] init];
+    
+    for (int i = 0; i < tempMovie.movieShowTimes.count; i++) {
+        NSString *tempString = [tempMovie.movieShowTimes objectAtIndex:i];
+        [showTimes appendString:[NSString stringWithFormat: @"%@ ", tempString]];
     }
     
     
+    cell.detailTextLabel.text = showTimes;
+    cell.imageView.image = tempMovie.movieImage;
     
-    
-    
-    
-    
-    cell.textLabel.text = @"test";
     return cell;
 }
 

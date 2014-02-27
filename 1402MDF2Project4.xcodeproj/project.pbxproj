@@ -40,6 +40,10 @@
 		5C53D90518BF0ABA00BE5A3A /* EndlessLove.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FE18BF0ABA00BE5A3A /* EndlessLove.mp4 */; };
 		5C53D90618BF0ABA00BE5A3A /* Frozen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FF18BF0ABA00BE5A3A /* Frozen.mp4 */; };
 		5C53D90718BF0ABA00BE5A3A /* TheLegoMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D90018BF0ABA00BE5A3A /* TheLegoMovie.mp4 */; };
+		5C53D90D18BF0D1B00BE5A3A /* ACG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D90918BF0D1B00BE5A3A /* ACG.png */; };
+		5C53D90E18BF0D1B00BE5A3A /* AMCAM18.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D90A18BF0D1B00BE5A3A /* AMCAM18.png */; };
+		5C53D91018BF0D1B00BE5A3A /* RWPV20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D90C18BF0D1B00BE5A3A /* RWPV20.png */; };
+		5C53D91418BF11C100BE5A3A /* RWL20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D91318BF11C100BE5A3A /* RWL20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		5C53D8FE18BF0ABA00BE5A3A /* EndlessLove.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EndlessLove.mp4; sourceTree = "<group>"; };
 		5C53D8FF18BF0ABA00BE5A3A /* Frozen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Frozen.mp4; sourceTree = "<group>"; };
 		5C53D90018BF0ABA00BE5A3A /* TheLegoMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheLegoMovie.mp4; sourceTree = "<group>"; };
+		5C53D90918BF0D1B00BE5A3A /* ACG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ACG.png; sourceTree = "<group>"; };
+		5C53D90A18BF0D1B00BE5A3A /* AMCAM18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AMCAM18.png; sourceTree = "<group>"; };
+		5C53D90C18BF0D1B00BE5A3A /* RWPV20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RWPV20.png; sourceTree = "<group>"; };
+		5C53D91318BF11C100BE5A3A /* RWL20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RWL20.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +232,10 @@
 		5C53D8F918BF0A8A00BE5A3A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5C53D91318BF11C100BE5A3A /* RWL20.png */,
+				5C53D90918BF0D1B00BE5A3A /* ACG.png */,
+				5C53D90A18BF0D1B00BE5A3A /* AMCAM18.png */,
+				5C53D90C18BF0D1B00BE5A3A /* RWPV20.png */,
 				5C53D8EB18BF0A7900BE5A3A /* 3DayToKill.png */,
 				5C53D8EC18BF0A7900BE5A3A /* 12YearsASlave.png */,
 				5C53D8ED18BF0A7900BE5A3A /* AboutLastNight.png */,
@@ -327,10 +339,13 @@
 			files = (
 				5C53D81918BC461400BE5A3A /* Main_iPad.storyboard in Resources */,
 				5C53D81E18BC461400BE5A3A /* Images.xcassets in Resources */,
+				5C53D90D18BF0D1B00BE5A3A /* ACG.png in Resources */,
 				5C53D90518BF0ABA00BE5A3A /* EndlessLove.mp4 in Resources */,
 				5C53D90718BF0ABA00BE5A3A /* TheLegoMovie.mp4 in Resources */,
+				5C53D91418BF11C100BE5A3A /* RWL20.png in Resources */,
 				5C53D8F518BF0A7900BE5A3A /* AmericanHustle.png in Resources */,
 				5C53D90218BF0ABA00BE5A3A /* 12YearsASlave.mp4 in Resources */,
+				5C53D91018BF0D1B00BE5A3A /* RWPV20.png in Resources */,
 				5C53D90418BF0ABA00BE5A3A /* AmericanHustle.mp4 in Resources */,
 				5C53D8F718BF0A7900BE5A3A /* Frozen.png in Resources */,
 				5C53D8F618BF0A7900BE5A3A /* EndlessLove.png in Resources */,
@@ -338,6 +353,7 @@
 				5C53D8F818BF0A7900BE5A3A /* TheLegoMovie.png in Resources */,
 				5C53D8F218BF0A7900BE5A3A /* 3DayToKill.png in Resources */,
 				5C53D8F318BF0A7900BE5A3A /* 12YearsASlave.png in Resources */,
+				5C53D90E18BF0D1B00BE5A3A /* AMCAM18.png in Resources */,
 				5C53D81618BC461400BE5A3A /* Main_iPhone.storyboard in Resources */,
 				5C53D80D18BC461400BE5A3A /* InfoPlist.strings in Resources */,
 				5C53D90318BF0ABA00BE5A3A /* AboutLastNight.mp4 in Resources */,
