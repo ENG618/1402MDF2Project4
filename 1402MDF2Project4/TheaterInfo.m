@@ -9,6 +9,5 @@
 #import "TheaterInfo.h"
 
 @implementation TheaterInfo
-@synthesize theaterTitle, theaterImage, theaterLocation, theaterShowings;
 
 @end

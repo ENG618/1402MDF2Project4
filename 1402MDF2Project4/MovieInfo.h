@@ -11,8 +11,10 @@
 @interface MovieInfo : NSObject
 
 @property (nonatomic) NSString *movieTitle;
-@property (nonatomic) NSString *movieDescription;
+@property (nonatomic) UIImage *movieImage;
 @property (nonatomic) NSURL *movieTrailerURL;
-@property (nonatomic) NSString *movieShowTimes;
+@property (nonatomic) NSMutableArray *movieShowTimes;
+
+- (void)initWithTitle:(NSString *)movieTitle movieImage:(UIImage *)movieImage movieURL:(NSURL *)movieURL movieShowTimes:(NSMutableArray *)movieShowTimes;
 
 @end

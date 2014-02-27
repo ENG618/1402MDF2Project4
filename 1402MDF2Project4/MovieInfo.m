@@ -9,6 +9,10 @@
 #import "MovieInfo.h"
 
 @implementation MovieInfo
-@synthesize movieTitle, movieDescription, movieShowTimes, movieTrailerURL;
+
+- (void)initWithTitle:(NSString *)movieTitle movieImage:(UIImage *)movieImage movieURL:(NSURL *)movieURL movieShowTimes:(NSMutableArray *)movieShowTimes
+{
+    
+}
 
 @end
