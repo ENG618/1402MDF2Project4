@@ -40,7 +40,11 @@
 
 - (IBAction)onPlay:(id)sender
 {
-    [moviePlayer play];
+    if (moviePlayer.playbackState == MPMoviePlaybackStatePlaying) {
+        [moviePlayer pause];
+    }else if (moviePlayer.playbackState == MPMoviePlaybackStatePaused) {
+        [moviePlayer play];
+    }
 }
 
 - (IBAction)onStop:(id)sender
