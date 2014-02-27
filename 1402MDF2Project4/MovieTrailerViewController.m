@@ -15,6 +15,7 @@
 @end
 
 @implementation MovieTrailerViewController
+@synthesize movieView, movieTitleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,17 +40,35 @@
 
 - (IBAction)onPlay:(id)sender
 {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"http://trailers.apple.com/movies/independent/10mountains10years/10mountains10years-tlr1_h720p.mov" ofType:@"mov"];
     
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    
+    moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    if (moviePlayer) {
+        [self.view addSubview:moviePlayer.view];
+        
+        moviePlayer.view.frame = movieView.frame;
+        
+        moviePlayer.fullscreen = NO;
+        moviePlayer.controlStyle = MPMovieControlStyleNone;
+        
+        [moviePlayer play];
+    }
 }
 
 - (IBAction)onStop:(id)sender
 {
-    
+    if (moviePlayer != nil) {
+        [moviePlayer stop];
+    }
 }
 
 - (IBAction)onFullscreen:(id)sender
 {
-    
+    if (moviePlayer != nil) {
+        moviePlayer.fullscreen = YES;
+    }
 }
 
 @end

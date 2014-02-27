@@ -26,12 +26,55 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    theaters = [[NSMutableArray alloc] init];
+    movies = [[NSMutableArray alloc] init];
+    
+    // Create Theater Data
+    
+    TheaterInfo *theater = [[TheaterInfo alloc] init];
+    theater.theaterTitle = [NSString stringWithFormat:@"AMC Altamonte Mall 18"];
+    theater.theaterLocation = [NSString stringWithFormat:@"433 E. Altamonte Dr. Altamonte Springs, FL 32701"];
+    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    //Add teater to array
+    [theaters addObject:theater];
+    
+    theater = [[TheaterInfo alloc] init];
+    theater.theaterTitle = [NSString stringWithFormat:@"Regal Winter Park Village 20"];
+    theater.theaterLocation = [NSString stringWithFormat:@"510 North Orlando Avenue Winter Park, FL 32789"];
+    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    //Add teater to array
+    [theaters addObject:theater];
+    
+    theater = [[TheaterInfo alloc] init];
+    theater.theaterTitle = [NSString stringWithFormat:@"Aloma Cinema Grill"];
+    theater.theaterLocation = [NSString stringWithFormat:@"2155 Aloma Avenue Winter Park, FL 32792"];
+    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    //Add teater to array
+    [theaters addObject:theater];
+    
+    theater = [[TheaterInfo alloc] init];
+    theater.theaterTitle = [NSString stringWithFormat:@"Regal Waterford Lakes 20"];
+    theater.theaterLocation = [NSString stringWithFormat:@"541 North Alafaya Trail Orlando, FL 32828"];
+    //theater.theaterImage = [UIImage imageNamed:@"theatername.png"];
+    //Add teater to array
+    [theaters addObject:theater];
+    
+    NSLog(@"Theaters: %@", theaters.description);
+    
+    
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,16 +87,60 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [theaters count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    switch (section) {
+        case 0:
+            return 2;
+            break;
+        case 1:
+            return 2;
+            break;
+        case 2:
+            return 2;
+            break;
+        case 3:
+            return 2;
+            break;
+            
+        default:
+            return 0;
+            break;
+    }
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    switch (section) {
+        case 0:
+            NSLog(@"Theaters: %@", theaters.description);
+            //TheaterInfo *tempTheater = [theaters objectAt]
+            //NSString *header = [theaters 0]
+            
+            return @"Section 1";
+            break;
+            
+        case 1:
+            return @"Section2";
+            break;
+            
+        case 2:
+            return @"Section3";
+            break;
+            
+        case 3:
+            return @"Section4";
+            break;
+            
+        default:
+            return nil;
+            break;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,7 +149,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.textLabel.text = @"test";
     return cell;
 }
 

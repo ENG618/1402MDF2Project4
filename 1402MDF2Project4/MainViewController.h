@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MovieInfo.h"
+#import "TheaterInfo.h"
 
 @interface MainViewController : UITableViewController
+{
+    NSMutableArray *movies;
+    NSMutableArray *theaters;
+}
 
 @end
