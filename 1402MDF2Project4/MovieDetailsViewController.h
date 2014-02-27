@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MovieInfo.h"
+#import "MovieTrailerViewController.h"
 
 @interface MovieDetailsViewController : UIViewController
 

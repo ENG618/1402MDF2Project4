@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "MovieInfo.h"
 
 @interface MovieTrailerViewController : UIViewController
 {
     MPMoviePlayerController *moviePlayer;
 }
+
+@property (nonatomic) MovieInfo *movie;
 
 @end
