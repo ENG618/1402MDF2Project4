@@ -26,6 +26,20 @@
 		5C53D8D518BD734D00BE5A3A /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8D418BD734D00BE5A3A /* MovieDetailsViewController.m */; };
 		5C53D8D818BD736D00BE5A3A /* MovieTrailerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8D718BD736D00BE5A3A /* MovieTrailerViewController.m */; };
 		5C53D8DB18BD739C00BE5A3A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C53D8DA18BD739C00BE5A3A /* MainViewController.m */; };
+		5C53D8F218BF0A7900BE5A3A /* 3DayToKill.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8EB18BF0A7900BE5A3A /* 3DayToKill.png */; };
+		5C53D8F318BF0A7900BE5A3A /* 12YearsASlave.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8EC18BF0A7900BE5A3A /* 12YearsASlave.png */; };
+		5C53D8F418BF0A7900BE5A3A /* AboutLastNight.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8ED18BF0A7900BE5A3A /* AboutLastNight.png */; };
+		5C53D8F518BF0A7900BE5A3A /* AmericanHustle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8EE18BF0A7900BE5A3A /* AmericanHustle.png */; };
+		5C53D8F618BF0A7900BE5A3A /* EndlessLove.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8EF18BF0A7900BE5A3A /* EndlessLove.png */; };
+		5C53D8F718BF0A7900BE5A3A /* Frozen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8F018BF0A7900BE5A3A /* Frozen.png */; };
+		5C53D8F818BF0A7900BE5A3A /* TheLegoMovie.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8F118BF0A7900BE5A3A /* TheLegoMovie.png */; };
+		5C53D90118BF0ABA00BE5A3A /* 3DaysToKill.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FA18BF0ABA00BE5A3A /* 3DaysToKill.mp4 */; };
+		5C53D90218BF0ABA00BE5A3A /* 12YearsASlave.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FB18BF0ABA00BE5A3A /* 12YearsASlave.mp4 */; };
+		5C53D90318BF0ABA00BE5A3A /* AboutLastNight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FC18BF0ABA00BE5A3A /* AboutLastNight.mp4 */; };
+		5C53D90418BF0ABA00BE5A3A /* AmericanHustle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FD18BF0ABA00BE5A3A /* AmericanHustle.mp4 */; };
+		5C53D90518BF0ABA00BE5A3A /* EndlessLove.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FE18BF0ABA00BE5A3A /* EndlessLove.mp4 */; };
+		5C53D90618BF0ABA00BE5A3A /* Frozen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D8FF18BF0ABA00BE5A3A /* Frozen.mp4 */; };
+		5C53D90718BF0ABA00BE5A3A /* TheLegoMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5C53D90018BF0ABA00BE5A3A /* TheLegoMovie.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +81,20 @@
 		5C53D8D718BD736D00BE5A3A /* MovieTrailerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTrailerViewController.m; sourceTree = "<group>"; };
 		5C53D8D918BD739C00BE5A3A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5C53D8DA18BD739C00BE5A3A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5C53D8EB18BF0A7900BE5A3A /* 3DayToKill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3DayToKill.png; sourceTree = "<group>"; };
+		5C53D8EC18BF0A7900BE5A3A /* 12YearsASlave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12YearsASlave.png; sourceTree = "<group>"; };
+		5C53D8ED18BF0A7900BE5A3A /* AboutLastNight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AboutLastNight.png; sourceTree = "<group>"; };
+		5C53D8EE18BF0A7900BE5A3A /* AmericanHustle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmericanHustle.png; sourceTree = "<group>"; };
+		5C53D8EF18BF0A7900BE5A3A /* EndlessLove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EndlessLove.png; sourceTree = "<group>"; };
+		5C53D8F018BF0A7900BE5A3A /* Frozen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frozen.png; sourceTree = "<group>"; };
+		5C53D8F118BF0A7900BE5A3A /* TheLegoMovie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheLegoMovie.png; sourceTree = "<group>"; };
+		5C53D8FA18BF0ABA00BE5A3A /* 3DaysToKill.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3DaysToKill.mp4; sourceTree = "<group>"; };
+		5C53D8FB18BF0ABA00BE5A3A /* 12YearsASlave.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12YearsASlave.mp4; sourceTree = "<group>"; };
+		5C53D8FC18BF0ABA00BE5A3A /* AboutLastNight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AboutLastNight.mp4; sourceTree = "<group>"; };
+		5C53D8FD18BF0ABA00BE5A3A /* AmericanHustle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmericanHustle.mp4; sourceTree = "<group>"; };
+		5C53D8FE18BF0ABA00BE5A3A /* EndlessLove.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EndlessLove.mp4; sourceTree = "<group>"; };
+		5C53D8FF18BF0ABA00BE5A3A /* Frozen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Frozen.mp4; sourceTree = "<group>"; };
+		5C53D90018BF0ABA00BE5A3A /* TheLegoMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheLegoMovie.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +124,8 @@
 		5C53D7F618BC461400BE5A3A = {
 			isa = PBXGroup;
 			children = (
+				5C53D90818BF0AC900BE5A3A /* Trailers */,
+				5C53D8F918BF0A8A00BE5A3A /* Images */,
 				5C53D80818BC461400BE5A3A /* 1402MDF2Project4 */,
 				5C53D82A18BC461400BE5A3A /* 1402MDF2Project4Tests */,
 				5C53D80118BC461400BE5A3A /* Frameworks */,
@@ -191,6 +221,34 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		5C53D8F918BF0A8A00BE5A3A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5C53D8EB18BF0A7900BE5A3A /* 3DayToKill.png */,
+				5C53D8EC18BF0A7900BE5A3A /* 12YearsASlave.png */,
+				5C53D8ED18BF0A7900BE5A3A /* AboutLastNight.png */,
+				5C53D8EE18BF0A7900BE5A3A /* AmericanHustle.png */,
+				5C53D8EF18BF0A7900BE5A3A /* EndlessLove.png */,
+				5C53D8F018BF0A7900BE5A3A /* Frozen.png */,
+				5C53D8F118BF0A7900BE5A3A /* TheLegoMovie.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5C53D90818BF0AC900BE5A3A /* Trailers */ = {
+			isa = PBXGroup;
+			children = (
+				5C53D8FA18BF0ABA00BE5A3A /* 3DaysToKill.mp4 */,
+				5C53D8FB18BF0ABA00BE5A3A /* 12YearsASlave.mp4 */,
+				5C53D8FC18BF0ABA00BE5A3A /* AboutLastNight.mp4 */,
+				5C53D8FD18BF0ABA00BE5A3A /* AmericanHustle.mp4 */,
+				5C53D8FE18BF0ABA00BE5A3A /* EndlessLove.mp4 */,
+				5C53D8FF18BF0ABA00BE5A3A /* Frozen.mp4 */,
+				5C53D90018BF0ABA00BE5A3A /* TheLegoMovie.mp4 */,
+			);
+			name = Trailers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,8 +327,22 @@
 			files = (
 				5C53D81918BC461400BE5A3A /* Main_iPad.storyboard in Resources */,
 				5C53D81E18BC461400BE5A3A /* Images.xcassets in Resources */,
+				5C53D90518BF0ABA00BE5A3A /* EndlessLove.mp4 in Resources */,
+				5C53D90718BF0ABA00BE5A3A /* TheLegoMovie.mp4 in Resources */,
+				5C53D8F518BF0A7900BE5A3A /* AmericanHustle.png in Resources */,
+				5C53D90218BF0ABA00BE5A3A /* 12YearsASlave.mp4 in Resources */,
+				5C53D90418BF0ABA00BE5A3A /* AmericanHustle.mp4 in Resources */,
+				5C53D8F718BF0A7900BE5A3A /* Frozen.png in Resources */,
+				5C53D8F618BF0A7900BE5A3A /* EndlessLove.png in Resources */,
+				5C53D90118BF0ABA00BE5A3A /* 3DaysToKill.mp4 in Resources */,
+				5C53D8F818BF0A7900BE5A3A /* TheLegoMovie.png in Resources */,
+				5C53D8F218BF0A7900BE5A3A /* 3DayToKill.png in Resources */,
+				5C53D8F318BF0A7900BE5A3A /* 12YearsASlave.png in Resources */,
 				5C53D81618BC461400BE5A3A /* Main_iPhone.storyboard in Resources */,
 				5C53D80D18BC461400BE5A3A /* InfoPlist.strings in Resources */,
+				5C53D90318BF0ABA00BE5A3A /* AboutLastNight.mp4 in Resources */,
+				5C53D90618BF0ABA00BE5A3A /* Frozen.mp4 in Resources */,
+				5C53D8F418BF0A7900BE5A3A /* AboutLastNight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
