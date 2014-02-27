@@ -9,22 +9,29 @@
 #import "MovieDetailsViewController.h"
 
 @interface MovieDetailsViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *title;
+@property (strong, nonatomic) IBOutlet UIImageView *mImage;
 
 @end
 
 @implementation MovieDetailsViewController
-@synthesize movie;
+@synthesize movie, title, mImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    title.text = movie.movieTitle;
+    mImage.image = movie.movieImage;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onClick:(id)sender {
 }
 
 @end

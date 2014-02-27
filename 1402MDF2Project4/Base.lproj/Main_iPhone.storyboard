@@ -138,6 +138,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onClick:" destination="NqD-pk-bsT" eventType="touchUpInside" id="xA2-NJ-AeF"/>
                                     <segue destination="ym7-9H-hPr" kind="push" id="jWF-5A-gBr"/>
                                 </connections>
                             </button>
@@ -155,6 +156,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="7GH-rA-gO1"/>
+                    <connections>
+                        <outlet property="mImage" destination="PSs-3p-nxK" id="ELA-Co-dOl"/>
+                        <outlet property="title" destination="9gL-s2-xQh" id="xVy-kS-GCp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4I-05-m1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

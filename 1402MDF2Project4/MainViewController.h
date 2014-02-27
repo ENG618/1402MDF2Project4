@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MovieInfo.h"
 #import "TheaterInfo.h"
+#import "MovieDetailsViewController.h"
 
 @interface MainViewController : UITableViewController
 {
