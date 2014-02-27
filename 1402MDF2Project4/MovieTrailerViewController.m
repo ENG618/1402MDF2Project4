@@ -17,15 +17,6 @@
 @implementation MovieTrailerViewController
 @synthesize movieView, movieTitleLabel, movie;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,10 +31,6 @@
 
 - (IBAction)onPlay:(id)sender
 {
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"http://trailers.apple.com/movies/independent/10mountains10years/10mountains10years-tlr1_h720p.mov" ofType:@"mp4"];
-//    
-//    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
-    
     moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[movie movieTrailerURL]];
     if (moviePlayer) {
         [self.view addSubview:moviePlayer.view];
