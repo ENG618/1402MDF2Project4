@@ -143,19 +143,6 @@
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
-    /*
-    theater = [[TheaterInfo alloc] init];
-    theater.theaterTitle = [NSString stringWithFormat:@"Regal Waterford Lakes 20"];
-    theater.theaterLocation = [NSString stringWithFormat:@"541 North Alafaya Trail Orlando, FL 32828"];
-    theater.theaterImage = [UIImage imageNamed:@"RWL20.png"];
-    theater.theaterShowings = movies;
-    //Add teater to array
-    [theaters addObject:theater];
-    */
-    //NSLog(@"Theaters: %@", theaters.description);
-    
-    
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -336,46 +323,6 @@
             break;
     }
 }
-
-/*
-//Title for header
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    switch (section) {
-        case 0:{
-            // Grab the correct theater object per section title
-            TheaterInfo *tempTheater = [theaters objectAtIndex:0];
-            //Return theater title
-            return tempTheater.theaterTitle;
-            break;
-        }
-        case 1:{
-            // Grab the correct theater object per section title
-            TheaterInfo *tempTheater = [theaters objectAtIndex:1];
-            //Return theater title
-            return tempTheater.theaterTitle;
-            break;
-        }
-        case 2:{
-            // Grab the correct theater object per section title
-            TheaterInfo *tempTheater = [theaters objectAtIndex:2];
-            //Return theater title
-            return tempTheater.theaterTitle;
-            break;
-        }
-        case 3:{
-            // Grab the correct theater object per section title
-            TheaterInfo *tempTheater = [theaters objectAtIndex:3];
-            //Return theater title
-            return tempTheater.theaterTitle;
-            break;
-        }
-        default:
-            return nil;
-            break;
-    }
-}
-*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
