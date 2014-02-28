@@ -102,6 +102,22 @@
     
     [movies addObject:movie];
     
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Muppets Most Wanted";
+    // Capture image as data object
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com/trailers/disney/muppetsmostwanted/images/poster.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/disney/muppetsmostwanted/muppetsmostwanted-tlr2_720p.mov"];
+
+    
+    [movies addObject:movie];
+    
+    
+    
     // Create Theater Data
     
     TheaterInfo *theater = [[TheaterInfo alloc] init];
@@ -127,7 +143,7 @@
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
-    
+    /*
     theater = [[TheaterInfo alloc] init];
     theater.theaterTitle = [NSString stringWithFormat:@"Regal Waterford Lakes 20"];
     theater.theaterLocation = [NSString stringWithFormat:@"541 North Alafaya Trail Orlando, FL 32828"];
@@ -135,8 +151,8 @@
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
-    
-    NSLog(@"Theaters: %@", theaters.description);
+    */
+    //NSLog(@"Theaters: %@", theaters.description);
     
     
     
@@ -165,14 +181,27 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     // Creat header label
-    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, tableView.frame.size.width, 30.0f)];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(50.0f, 50.0f, tableView.frame.size.width, 100.0f)];
     if (headerLabel != nil) {
         
         switch (section) {
             case 0:{
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:0];
-                headerLabel.text = tempTheater.theaterTitle;
+
+                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];//initWithImage:tempTheater.theaterImage];
+                ti.image = tempTheater.theaterImage;
+                
+                
+                [headerLabel addSubview:ti];
+                
+                //headerLabel.text = tempTheater.theaterTitle;
+                headerLabel.backgroundColor = [UIColor lightGrayColor];
+                
+                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 140, 50)];
+                theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
+                
+                [headerLabel addSubview:theaterTitle];
                 
                 
                 
@@ -194,6 +223,7 @@
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:2];
                 headerLabel.text = tempTheater.theaterTitle;
+                headerLabel.backgroundColor = [UIColor lightGrayColor];
                 //Return theater title
                 return headerLabel;
                 break;
@@ -202,6 +232,7 @@
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:3];
                 headerLabel.text = tempTheater.theaterTitle;
+                headerLabel.backgroundColor = [UIColor lightGrayColor];
                 //Return theater title
                 return headerLabel;
                 break;
@@ -237,8 +268,8 @@
     }
 }
 
-
-
+/*
+//Title for header
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     switch (section) {
@@ -275,6 +306,7 @@
             break;
     }
 }
+*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

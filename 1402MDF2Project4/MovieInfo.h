@@ -15,6 +15,4 @@
 @property (nonatomic) NSURL *movieTrailerURL;
 @property (nonatomic) NSMutableArray *movieShowTimes;
 
-- (void)initWithTitle:(NSString *)movieTitle movieImage:(UIImage *)movieImage movieURL:(NSURL *)movieURL movieShowTimes:(NSMutableArray *)movieShowTimes;
-
 @end

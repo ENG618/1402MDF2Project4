@@ -10,9 +10,4 @@
 
 @implementation MovieInfo
 
-- (void)initWithTitle:(NSString *)movieTitle movieImage:(UIImage *)movieImage movieURL:(NSURL *)movieURL movieShowTimes:(NSMutableArray *)movieShowTimes
-{
-    
-}
-
 @end
