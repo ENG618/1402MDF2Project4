@@ -178,6 +178,11 @@
     return [theaters count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 75.0f;
+}
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     // Creat header label
@@ -186,53 +191,117 @@
         
         switch (section) {
             case 0:{
+                // Set background color
+                headerLabel.backgroundColor = [UIColor darkGrayColor];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:0];
-
-                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];//initWithImage:tempTheater.theaterImage];
+                // Create imageView
+                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
+                // Set image
                 ti.image = tempTheater.theaterImage;
-                
-                
+                // Add image to view
                 [headerLabel addSubview:ti];
-                
-                //headerLabel.text = tempTheater.theaterTitle;
-                headerLabel.backgroundColor = [UIColor lightGrayColor];
-                
-                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 140, 50)];
+                // Create title lable
+                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 5, 225, 25)];
                 theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
-                
+                theaterTitle.textColor = [UIColor whiteColor];
+                // Add title to view
                 [headerLabel addSubview:theaterTitle];
-                
-                
-                
+                // Creat address lable
+                UILabel *theaterAddress = [[UILabel alloc]initWithFrame:CGRectMake(85, 35, 225, 25)];
+                theaterAddress.text = tempTheater.theaterLocation;
+                theaterAddress.textColor = [UIColor whiteColor];
+                theaterAddress.adjustsFontSizeToFitWidth = YES;
+                // Add address to view
+                [headerLabel addSubview:theaterAddress];
                 
                 //Return theater title
                 return headerLabel;
                 break;
             }
             case 1:{
+                // Set background color
+                headerLabel.backgroundColor = [UIColor darkGrayColor];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:1];
-                headerLabel.text = tempTheater.theaterTitle;
-                headerLabel.backgroundColor = [UIColor lightGrayColor];
+                // Create imageView
+                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
+                // Set image
+                ti.image = tempTheater.theaterImage;
+                // Add image to view
+                [headerLabel addSubview:ti];
+                // Create title lable
+                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 5, 225, 25)];
+                theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
+                theaterTitle.textColor = [UIColor whiteColor];
+                // Add title to view
+                [headerLabel addSubview:theaterTitle];
+                // Creat address lable
+                UILabel *theaterAddress = [[UILabel alloc]initWithFrame:CGRectMake(85, 35, 225, 25)];
+                theaterAddress.text = tempTheater.theaterLocation;
+                theaterAddress.textColor = [UIColor whiteColor];
+                theaterAddress.adjustsFontSizeToFitWidth = YES;
+                // Add address to view
+                [headerLabel addSubview:theaterAddress];
+                
                 //Return theater title
                 return headerLabel;
                 break;
             }
             case 2:{
+                // Set background color
+                headerLabel.backgroundColor = [UIColor darkGrayColor];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:2];
-                headerLabel.text = tempTheater.theaterTitle;
-                headerLabel.backgroundColor = [UIColor lightGrayColor];
+                // Create imageView
+                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
+                // Set image
+                ti.image = tempTheater.theaterImage;
+                // Add image to view
+                [headerLabel addSubview:ti];
+                // Create title lable
+                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 5, 225, 25)];
+                theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
+                theaterTitle.textColor = [UIColor whiteColor];
+                // Add title to view
+                [headerLabel addSubview:theaterTitle];
+                // Creat address lable
+                UILabel *theaterAddress = [[UILabel alloc]initWithFrame:CGRectMake(85, 35, 225, 25)];
+                theaterAddress.text = tempTheater.theaterLocation;
+                theaterAddress.textColor = [UIColor whiteColor];
+                theaterAddress.adjustsFontSizeToFitWidth = YES;
+                // Add address to view
+                [headerLabel addSubview:theaterAddress];
+                
                 //Return theater title
                 return headerLabel;
                 break;
             }
             case 3:{
+                // Set background color
+                headerLabel.backgroundColor = [UIColor darkGrayColor];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:3];
-                headerLabel.text = tempTheater.theaterTitle;
-                headerLabel.backgroundColor = [UIColor lightGrayColor];
+                // Create imageView
+                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
+                // Set image
+                ti.image = tempTheater.theaterImage;
+                // Add image to view
+                [headerLabel addSubview:ti];
+                // Create title lable
+                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 5, 225, 25)];
+                theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
+                theaterTitle.textColor = [UIColor whiteColor];
+                // Add title to view
+                [headerLabel addSubview:theaterTitle];
+                // Creat address lable
+                UILabel *theaterAddress = [[UILabel alloc]initWithFrame:CGRectMake(85, 35, 225, 25)];
+                theaterAddress.text = tempTheater.theaterLocation;
+                theaterAddress.textColor = [UIColor whiteColor];
+                theaterAddress.adjustsFontSizeToFitWidth = YES;
+                // Add address to view
+                [headerLabel addSubview:theaterAddress];
+                
                 //Return theater title
                 return headerLabel;
                 break;
