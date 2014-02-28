@@ -526,6 +526,7 @@
 				GCC_PREFIX_HEADER = "1402MDF2Project4/1402MDF2Project4-Prefix.pch";
 				INFOPLIST_FILE = "1402MDF2Project4/1402MDF2Project4-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -539,6 +540,7 @@
 				GCC_PREFIX_HEADER = "1402MDF2Project4/1402MDF2Project4-Prefix.pch";
 				INFOPLIST_FILE = "1402MDF2Project4/1402MDF2Project4-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -604,6 +606,7 @@
 				5C53D83618BC461400BE5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C53D83718BC461400BE5A3A /* Build configuration list for PBXNativeTarget "1402MDF2Project4Tests" */ = {
 			isa = XCConfigurationList;
@@ -612,6 +615,7 @@
 				5C53D83918BC461400BE5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

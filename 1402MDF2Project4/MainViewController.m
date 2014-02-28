@@ -192,7 +192,7 @@
         switch (section) {
             case 0:{
                 // Set background color
-                headerLabel.backgroundColor = [UIColor darkGrayColor];
+                headerLabel.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.75f];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:0];
                 // Create imageView
@@ -221,7 +221,7 @@
             }
             case 1:{
                 // Set background color
-                headerLabel.backgroundColor = [UIColor darkGrayColor];
+                headerLabel.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.75f];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:1];
                 // Create imageView
@@ -250,7 +250,7 @@
             }
             case 2:{
                 // Set background color
-                headerLabel.backgroundColor = [UIColor darkGrayColor];
+                headerLabel.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.75f];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:2];
                 // Create imageView
@@ -279,7 +279,7 @@
             }
             case 3:{
                 // Set background color
-                headerLabel.backgroundColor = [UIColor darkGrayColor];
+                headerLabel.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.75f];
                 // Grab the correct theater object per section title
                 TheaterInfo *tempTheater = [theaters objectAtIndex:3];
                 // Create imageView
