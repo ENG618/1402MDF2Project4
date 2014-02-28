@@ -33,87 +33,183 @@
     // Create Movie Data
     
     MovieInfo *movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"3 Days To Kill";
-    movie.movieImage = [UIImage imageNamed:@"3DayToKill.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"2:00pm", @"4:45pm", @"7:20pm", @"9:55pm", nil];
-    // Obtain path to video
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"3DaysToKill" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"12 Years A Slave";
-    movie.movieImage = [UIImage imageNamed:@"12YearsASlave.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"12:50pm", @"3:40pm", @"6:45pm", @"9:45pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"12YearsASlave" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"About Last Night";
-    movie.movieImage = [UIImage imageNamed:@"AboutLastNight.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"11:50am", @"1:15pm", @"3:55pm", @"10:30pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"AboutLastNight" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"American Hustle";
-    movie.movieImage = [UIImage imageNamed:@"AmericanHustle.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"10:30am", @"12:10pm", @"2:50pm", @"5:30pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"AmericanHustle" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"Endless Love";
-    movie.movieImage = [UIImage imageNamed:@"EndlessLove.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"10:55am", @"1:35pm", @"7:30pm", @"10:15pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"EndlessLove" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"Frozen";
-    movie.movieImage = [UIImage imageNamed:@"Frozen.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"11:00am", @"1:50pm", @"4:40pm", @"5:25pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"Frozen" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"The Lego Movie";
-    movie.movieImage = [UIImage imageNamed:@"TheLegoMovie.png"];
-    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
-    // Obtain path to video
-    filePath = [[NSBundle mainBundle] pathForResource:@"TheLegoMovie" ofType:@"mp4"];
-    movie.movieTrailerURL = [NSURL fileURLWithPath:filePath];
-    
-    [movies addObject:movie];
-    
-    
-    movie = [[MovieInfo alloc] init];
-    movie.movieTitle = @"Muppets Most Wanted";
+    movie.movieTitle = @"Non-Stop";
     // Capture image as data object
-    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com/trailers/disney/muppetsmostwanted/images/poster.jpg"]];
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/universal/nonstop/images/poster-large.jpg"]];
     // Convert Data object to UIImage
     movie.movieImage = [UIImage imageWithData:imageData];
     movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
     // Obtain path to video
-    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/disney/muppetsmostwanted/muppetsmostwanted-tlr2_720p.mov"];
-
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/nonstop/nonstop-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
     
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"3 Days to Kill";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/independent/3daystokill/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/3daystokill/3daystokill-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Pompeli";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/sony_pictures/pompeii/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/pompeii/pompeii-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"About Last Night";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/sony_pictures/aboutlastnight/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/aboutlastnight/aboutlastnight-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Endless Love";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/universal/endlesslove/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/endlesslove/endlesslove-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Winter's Tale";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/wb/winterstale/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/wb/winterstale/winterstale-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Robocop";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/sony_pictures/robocop/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/robocop/robocop-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"The LEGO Movie";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/wb/thelegomovie/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/wb/thelegomovie/lego-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"The Monuments Men";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/sony_pictures/themonumentsmen/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/monumentsmen/monumentsmen-tlr2_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"That Awkward Moment";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/focus_features/thatawkwardmoment/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/thatawkwardmoment/thatakwardmoment-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Ride Along";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/universal/ridealong/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/ridealong/ridealong-tsr_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"The Nut Job";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/independent/thenutjob/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/thenutjob/thenutjob-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Lone Survivor";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/universal/lonesurvivor/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/lonesurvivor/lonesurvivor-tlr_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"Jack Ryan: Shadow Recruit";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/paramount/jackryanshadowrecruit/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/paramount/jackryanshadowrecruit/jackryanshadowrecruit-tlr1_720p.mov"];
+    // Add object to movies array
+    [movies addObject:movie];
+    
+    movie = [[MovieInfo alloc] init];
+    movie.movieTitle = @"The Wolf of Wall Street";
+    // Capture image as data object
+    imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://trailers.apple.com//trailers/paramount/thewolfofwallstreet/images/poster-large.jpg"]];
+    // Convert Data object to UIImage
+    movie.movieImage = [UIImage imageWithData:imageData];
+    movie.movieShowTimes = [[NSMutableArray alloc] initWithObjects:@"1:10pm", @"3:50pm", @"4:40pm", @"7:20pm", nil];
+    // Obtain path to video
+    movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/paramount/wolfofwallstreet/wolfofwallstreet-tlr1_720p.mov"];
+    // Add object to movies array
     [movies addObject:movie];
     
     
@@ -345,45 +441,6 @@
     
     return cell;
 }
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
  #pragma mark - Navigation
  
