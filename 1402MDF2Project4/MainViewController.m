@@ -42,7 +42,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/nonstop/nonstop-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"3 Days to Kill";
@@ -54,7 +54,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/3daystokill/3daystokill-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Pompeli";
@@ -66,7 +66,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/pompeii/pompeii-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"About Last Night";
@@ -78,7 +78,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/aboutlastnight/aboutlastnight-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Endless Love";
@@ -90,7 +90,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/endlesslove/endlesslove-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Winter's Tale";
@@ -102,7 +102,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/wb/winterstale/winterstale-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Robocop";
@@ -114,7 +114,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/robocop/robocop-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"The LEGO Movie";
@@ -126,7 +126,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/wb/thelegomovie/lego-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"The Monuments Men";
@@ -138,7 +138,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/monumentsmen/monumentsmen-tlr2_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"That Awkward Moment";
@@ -150,7 +150,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/thatawkwardmoment/thatakwardmoment-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Ride Along";
@@ -162,7 +162,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/ridealong/ridealong-tsr_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"The Nut Job";
@@ -174,7 +174,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/thenutjob/thenutjob-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Lone Survivor";
@@ -186,7 +186,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/universal/lonesurvivor/lonesurvivor-tlr_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"Jack Ryan: Shadow Recruit";
@@ -198,7 +198,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/paramount/jackryanshadowrecruit/jackryanshadowrecruit-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     movie = [[MovieInfo alloc] init];
     movie.movieTitle = @"The Wolf of Wall Street";
@@ -210,7 +210,7 @@
     // Obtain path to video
     movie.movieTrailerURL = [NSURL URLWithString:@"http://movietrailers.apple.com/movies/paramount/wolfofwallstreet/wolfofwallstreet-tlr1_720p.mov"];
     // Add object to movies array
-    [movies addObject:movie];
+    [movies addObject:movies];
     
     
     
@@ -220,6 +220,12 @@
     theater.theaterTitle = [NSString stringWithFormat:@"AMC Altamonte Mall 18"];
     theater.theaterLocation = [NSString stringWithFormat:@"433 E. Altamonte Dr. Altamonte Springs, FL 32701"];
     theater.theaterImage = [UIImage imageNamed:@"AMCAM18.png"];
+    
+//    for (int i = 0; i<movies.count; i++) {
+//        if (i <= 4) {
+//            [theater.theaterShowings  addObject:[movies objectAtIndex:i]];
+//        }
+//    }
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
@@ -228,6 +234,11 @@
     theater.theaterTitle = [NSString stringWithFormat:@"Regal Winter Park Village 20"];
     theater.theaterLocation = [NSString stringWithFormat:@"510 North Orlando Avenue Winter Park, FL 32789"];
     theater.theaterImage = [UIImage imageNamed:@"RWPV20"];
+//    for (int i = 5; i<movies.count; i++) {
+//        if (i <= 9) {
+//            [theater.theaterShowings  addObject:[movies objectAtIndex:i]];
+//        }
+//    }
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
@@ -236,6 +247,11 @@
     theater.theaterTitle = [NSString stringWithFormat:@"Aloma Cinema Grill"];
     theater.theaterLocation = [NSString stringWithFormat:@"2155 Aloma Avenue Winter Park, FL 32792"];
     theater.theaterImage = [UIImage imageNamed:@"ACG"];
+//    for (int i = 10; i<movies.count; i++) {
+//        if (i <= 14) {
+//            [theater.theaterShowings  addObject:[movies objectAtIndex:i]];
+//        }
+//    }
     theater.theaterShowings = movies;
     //Add teater to array
     [theaters addObject:theater];
@@ -360,35 +376,7 @@
                 return headerLabel;
                 break;
             }
-            case 3:{
-                // Set background color
-                headerLabel.backgroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.75f];
-                // Grab the correct theater object per section title
-                TheaterInfo *tempTheater = [theaters objectAtIndex:3];
-                // Create imageView
-                UIImageView *ti = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
-                // Set image
-                ti.image = tempTheater.theaterImage;
-                // Add image to view
-                [headerLabel addSubview:ti];
-                // Create title lable
-                UILabel *theaterTitle = [[UILabel alloc] initWithFrame:CGRectMake(85, 5, 225, 25)];
-                theaterTitle.text = [NSString stringWithFormat:@"%@", tempTheater.theaterTitle];
-                theaterTitle.textColor = [UIColor whiteColor];
-                // Add title to view
-                [headerLabel addSubview:theaterTitle];
-                // Creat address lable
-                UILabel *theaterAddress = [[UILabel alloc]initWithFrame:CGRectMake(85, 35, 225, 25)];
-                theaterAddress.text = tempTheater.theaterLocation;
-                theaterAddress.textColor = [UIColor whiteColor];
-                theaterAddress.adjustsFontSizeToFitWidth = YES;
-                // Add address to view
-                [headerLabel addSubview:theaterAddress];
-                
-                //Return theater title
-                return headerLabel;
-                break;
-            }
+
             default:
                 return nil;
                 break;
@@ -409,9 +397,6 @@
             break;
         case 2:
             return [[[theaters objectAtIndex:2] theaterShowings] count];
-            break;
-        case 3:
-            return [[[theaters objectAtIndex:3] theaterShowings] count];
             break;
             
         default:

@@ -20,6 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = movie.movieTitle;
+    
 	// Do any additional setup after loading the view.
     moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[movie movieTrailerURL]];
     if (moviePlayer) {
@@ -28,7 +31,7 @@
         moviePlayer.view.frame = movieView.frame;
         
         moviePlayer.fullscreen = NO;
-        moviePlayer.controlStyle = MPMovieControlStyleNone;
+        moviePlayer.controlStyle = MPMovieControlStyleEmbedded;
     }
 }
 
